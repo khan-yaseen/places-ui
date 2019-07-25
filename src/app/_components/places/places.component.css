@@ -1,0 +1,29 @@
+.places {
+    width: 75%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.add-pl {
+    background-color: #3f51b5;
+    color: aliceblue;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+.example-card {
+    float: left;
+    max-width: 325px;
+    margin-right: 3%;
+    margin-top: 3%;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+::ng-deep mat-dialog-container {
+    width: 200%;
+}

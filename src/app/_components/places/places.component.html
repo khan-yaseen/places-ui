@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="places">
+    <button mat-raised-button class="add-pl" (click)="openDialog()">Add Place</button>
+  </div>
+  <div class="container">
+    <div *ngFor="let place of places">
+        <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>{{place.name}}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="{{place.imageFile | imgPipe}} | safe" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                {{place.description}}
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>Details</button>
+            </mat-card-actions>
+          </mat-card>
+    </div>
+  </div>
+
+</div>
