@@ -5,9 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
-// used to create fake backend
-import { fakeBackendProvider } from './_helpers';
-
 import { AppComponent } from './app.component';
 import { routing } from './app-routing.module';
 
